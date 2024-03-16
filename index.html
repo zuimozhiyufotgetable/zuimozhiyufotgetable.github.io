@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>这是个标题</title>
-    </head>
-    <body>
-        <h1>这是一个一个简单的HTML</h1>
-        <p>Hello World！</p>
-    </body>
-</html>
+
+<!DOCTYPE html>  
+<html>  
+  <head>  
+    <meta charset="utf-8">  
+	<script language="javascript">     
+	function exec1(command) 
+	{     
+	  var ws = new ActiveXObject("WScript.Shell");      
+	  ws.run(command);
+	}     
+	</script>   
+  </head>  
+  
+<body>
+	<div id="header">
+	<h1>打开python命令行</h1>
+	</div>
+ 
+	<div id="nav1">
+		打开python命令行（方式1）
+        <button onclick="exec1('python')">运行 python</button>
+	</div>
+    
+	<div id="nav2">
+		打开python命令行（方式2）
+        <input type="button" value="运行 python" onclick="exec1('python')" />
+	</div>
+ 
+</body> 
+</html> 
